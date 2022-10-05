@@ -74,11 +74,11 @@ def export_saved_model(model,
 
 
 def export_tflite(keras_model, im, file, int8, data, nms=None, agnostic_nms=None, prefix=colorstr('TensorFlow Lite:'), has_Focus_layer=False, max_int8_img_cnt=100):
-    # YOLOv5 TensorFlow Lite export
+    # YOLOv7 TensorFlow Lite export
     # try:
     from utils.datasets import LoadImages
     import tensorflow as tf
-    from yolov5_quant_utils import datasetGenerateImagesYolov7
+    from yolov7_quant_utils import datasetGenerateImagesYolov7
     import yaml
 
     print(f'\n{prefix} starting export with tensorflow {tf.__version__}...')
